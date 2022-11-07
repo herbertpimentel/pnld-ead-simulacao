@@ -1,0 +1,19 @@
+
+backgrounds:
+  room: assets/backgrounds/room_day.jpg
+  room_night: assets/backgrounds/room_night.png
+
+characters:
+  homem:
+    displayName: Carlos
+    speechColour: "#263669"
+    looks:
+      normal: assets/characters/Char2Curious.png
+      scary: assets/characters/Char2Scary.png
+      sad: assets/characters/Char2Sad.png
+
+music:
+  rollingCredits: assets/audio/Evan_Schaeffer_-_01_-_Aqueduct.mp3
+  morningBGM: assets/audio/Evan_Schaeffer_-_03_-_Glow.mp3
+
+

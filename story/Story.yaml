@@ -1,0 +1,37 @@
+start:
+  - show room: WITH FADE CONTINUE
+  - show homem: normal AT CENTER WITH FADE
+  - homem says: Olá tudo bem vamos começar a (bold)simulação!(end)
+  - wait: 300
+  - homem says normal: Você está pronto pra começar?
+  - choice:
+    - "Sim!":
+      - call SalvarRespostaPlugin: 
+        resposta: sim
+      - homem says scary: Fantástico!
+      - homem says normal: Mas, eu não estava esperando que você estivesse pronto. Vamos combinar de fazer isso depois.
+    - "Não!":
+      - call SalvarRespostaPlugin:         
+        resposta: não
+      - homem says sad: Sem problema então revise o conteúdo e volte quando se sentir pronto!
+  - homem says normal: Lembre-se que vou estar aqui quando você voltar.
+  - homem says sad: Uma pena que você já vai, foi bom te ver tchau tchau!
+  - scene: endGame
+
+endGame:
+  - homem says sad: Fico triste, de ver você ir...
+  - hide ALL:
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - Ministério da Educação
+      - null
+      - UFAL
+      - Universidade Federal de Alagoas
+      - null
+      - NEES
+      - Núcleo de Excelência em Tecnologias Social
+      - null
+      - PNLD
+      - Assistente Virtual
+  

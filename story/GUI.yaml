@@ -1,0 +1,101 @@
+name: PNLD
+resolution:
+  - 1024
+  - 768
+config:
+  hud:
+    - id: default
+      type: choices
+      asset: asset31
+      x: 380
+      'y': 300
+      alignment: centered
+      separation: 10
+      sfx: none
+      chosenColor: '#ffffff'
+      text:
+        x: 0
+        'y': 0
+        style:
+          font: fontsaudimat-mono
+          fontSize: 32px
+          fill: '#0c326f'
+          align: left
+          wordWrap: true
+          wordWrapWidth: '400'
+          boundsAlignH: center
+          boundsAlignV: middle
+    - id: default
+      type: messageBox
+      asset: asset19
+      x: 385
+      'y': 159
+      sfx: none
+      text:
+        x: 45
+        'y': 20
+        style:
+          font: fontsaudimat-mono
+          fontSize: 20px
+          fill: '#0c326f'
+          align: left
+          wordWrap: true
+          wordWrapWidth: '370'
+      ctc:
+        x: 345
+        'y': 98
+        asset: asset21
+  
+  menus:
+    main:
+      - type: image
+        x: 0
+        'y': 0
+        asset: loaderbackground
+      - type: music
+        asset: Evan_Schaeffer_-_01_-_Aqueduct
+      - type: button
+        x: 414
+        'y': 400
+        asset: asset4
+        binding: start     
+assets:
+  images:
+    loaderbackground:
+      name: loaderbackground
+      fileName: loaderloaderbackground.png
+    asset19:
+      name: asset19
+      fileName: hudasset19.png
+  spritesheets:
+    loading-bar:
+      name: loading-bar
+      fileName: loaderloading-bar.png
+      w: 416
+      h: 82 
+    asset4:
+      name: asset4
+      fileName: mainasset4.png
+      w: 199
+      h: 82
+    asset21:
+      name: asset21
+      fileName: hudasset21.png
+      w: 19
+      h: 20
+    asset31:
+      name: asset31
+      fileName: hudasset31.png
+      w: 416
+      h: 65
+  fonts:
+    fontsaudimat-mono:
+      fileName: fontsfontsaudimat-mono.ttf
+      name: fontsaudimat-mono
+  audio:
+    Evan_Schaeffer_-_01_-_Aqueduct:
+      fileName: audioEvan_Schaeffer_-_01_-_Aqueduct.mp3
+      name: Evan_Schaeffer_-_01_-_Aqueduct
+      type: music
+madeWithRenJSBuilder: "2.0"
+assetsPath: assets/gui/
